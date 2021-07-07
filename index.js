@@ -78,10 +78,6 @@ let drawBars = () => {
         .attr('y', (item) => {
             return (height - padding) - heightScale(item[1]);
         })
-        // .append('title')
-        // .text((item) => {
-        //     return item[0];
-        // })
         .on('mouseover', (item) => {
             tooltip.style('visibility', 'visible');
             tooltip.text(item[0]);
@@ -92,19 +88,6 @@ let drawBars = () => {
             tooltip.style('visibility', 'hidden');
         })
     }
-
-//         .on('mouseover', (item) => {
-//             tooltip.transition()
-//                     .style('visibility', 'visible')
-
-                    
-//             toolitip.text(item[0])
-//         })
-//         .on('mouseout', (item) => {
-//             tooltip.transition()
-//                     .style('visibility', 'hidden');
-//         })
-// }
 
 let generateAxes = () => {
     let xAxis = d3.axisBottom(xAxisScale);
