@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+svg {
+    background: darkgray;
+}
+
+#title {
+    font-size: 2rem;
+}   
+
+#tooltip {
+    display: block;
+}
+
+.bar:hover{
+    /* fill: aqua; */
+    fill: antiquewhite;
+}
